@@ -10,7 +10,7 @@ from utils.logger import Logger, LogLevel
 
 log = Logger(log_lvl=LogLevel.INFO).get_instance()
 
-
+#python session
 def event_listener(driver) -> EventFiringWebDriver:
     """Attach the event listener to the driver."""
     e_driver: EventFiringWebDriver = EventFiringWebDriver(driver, EventListener())
